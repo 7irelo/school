@@ -99,7 +99,6 @@ int main(int argc, string argv[])
 // Update ranks given a new vote
 bool vote(int rank, string name, int ranks[])
 {
-    // TO DO
     for (int i = 0, n = candidate_count; i < n; i++)
     {
         if (strcmp(name, candidates[i]) == 0)
@@ -114,7 +113,6 @@ bool vote(int rank, string name, int ranks[])
 // Update preferences given one voter's ranks
 void record_preferences(int ranks[])
 {
-    // TODO
     for (int i = 0, n = candidate_count; i < n - 1; i++)
     {
         for (int j = (i + 1); j < n; j++)
@@ -128,7 +126,6 @@ void record_preferences(int ranks[])
 // Record pairs of candidates where one is preferred over the other
 void add_pairs(void)
 {
-    // TODO
     int x = 0;
     for (int i = 0, n = candidate_count; i < n; i++)
     {
@@ -144,7 +141,6 @@ void add_pairs(void)
         }
         
     }
-    
     return;
 }
 
