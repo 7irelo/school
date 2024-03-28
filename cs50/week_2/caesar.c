@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void rotate(int key, string plaintext);
+void compute(int key, string plaintext);
 
 int main(int argc, string argv[])
 {
@@ -22,13 +22,13 @@ int main(int argc, string argv[])
     else
     {
         string plaintext = get_string("plaintext: ");
-        rotate(key, plaintext);
+        compute(key, plaintext);
     }
     printf("\n");
     return 0;
 }
 
-void rotate(int key, string plaintext)
+void compute(int key, string plaintext)
 {
     printf("ciphertext: ");
 

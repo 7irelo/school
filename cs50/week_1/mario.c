@@ -3,16 +3,16 @@
 
 int main(void)
 {
-    int h;
+    int height;
     do
     {
-        h = get_int("Height: ");
+        height = get_int("Height: ");
     }
-    while (h < 1);
+    while (height < 1);
 
-    for (int i = 0; i < h; i++)
+    for (int i = 0; i < height; i++)
     {
-        for (int k = 0; k < h - i - 1; k++)
+        for (int k = 0; k < height - i - 1; k++)
         {
             printf(" ");
         }
